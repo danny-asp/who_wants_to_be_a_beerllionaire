@@ -1,0 +1,48 @@
+.wrapper {
+  margin-left: 1rem;
+  width: 30%;
+  min-width: 160px;
+  height: 22rem;
+  background-color: aqua;
+  align-self: center;
+  background-color: transparent;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 10px 200px 200px 10px 10px 200px 200px 10px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  display: block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  padding: 0.5rem;
+  border-bottom-left-radius: 18px 80px;
+  border-bottom-right-radius: 80px 18px;
+  border-top-left-radius: 80px 18px;
+  border-top-right-radius: 18px 80px;
+}
+
+.btn {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 12px;
+  background-color: rgb(18, 93, 178);
+}
+.correctAnswer {
+  display: none;
+}
+
+.btn:hover + .correctAnswer {
+  display: inline-block;
+  text-align: center;
+  color: green;
+}
+.exit {
+  position: relative;
+  bottom: 0;
+}

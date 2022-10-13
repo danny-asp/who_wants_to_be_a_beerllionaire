@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import StartScreen from "./layout/StartScreen";
+import GameLayout from "./layout/GameLayout";
 
-function App() {
+function App(props) {
+  const [gameStatus, setGameStatus] = useState(false);
+
+  const gameStatusHandler = () => {
+    setTimeout(() => setGameStatus(!gameStatus), 500);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!gameStatus && <StartScreen onStartGame={gameStatusHandler} />}
+      {gameStatus && <GameLayout></GameLayout>}
     </div>
   );
 }

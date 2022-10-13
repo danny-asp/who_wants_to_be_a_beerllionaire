@@ -1,0 +1,10 @@
+.btnBadge {
+  color: orange;
+  position: absolute;
+  left: 9%;
+}
+.btnBadgeRight {
+  color: orange;
+  position: absolute;
+  left: 52%;
+}
